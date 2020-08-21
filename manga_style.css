@@ -4,9 +4,7 @@
 	box-sizing: border-box;
 }
 body{ align-self: center; margin: 0; padding: 0;}
-#topButton{
-	display: none;
-}
+
 #siteHeader {
 	display: flex;
 	justify-content: space-around;
@@ -46,7 +44,7 @@ body{ align-self: center; margin: 0; padding: 0;}
 #s1{
 	position: relative;
 	top: 3vh;
-	margin: auto;
+	margin: 0px 6% 0px 4%;
 	width: 90%;
 	background-color: white;
 	margin-top: 6vh;
@@ -83,7 +81,37 @@ body{ align-self: center; margin: 0; padding: 0;}
 	border-radius: 3%;
 }
 
+#topButton{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 2%;
+	z-index: 99;
+	outline: none;
+	cursor: pointer;
+	font-size: 17px;
+	color: white;
+	background: darkblue;
+	border: 3px;
+	border-color: white;
+	border-radius: 50%;
+	margin: 0px;transition: 0.5s;
+	transition-duration: 0.5s;
+	padding: 15px 20px;
+}
+#topButton:hover{
+	color: darkblue;
+	background: white;
+	padding: 16px 21px;
+	border-color: darkblue;
+}
+
 @media screen and (max-width: 997px){
+	#topButton{
+		height: 10vh;
+		bottom: 13px;
+		right: 20px;
+	}
 	.box{
 		height: 45vh;
 		width: 27vh;
