@@ -28,8 +28,22 @@ window.onload = function sortList() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+    scrollFunctionButton();
     scrollFunctionMenu();
 }
+/*----------------PRZYCISK NA GÓRĘ----------------------------------------------------------------------*/
+function scrollFunctionButton() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("topButton").style.display = "block";
+    } else {
+        document.getElementById("topButton").style.display = "none";
+    }
+}
+const btn = document.getElementById('topButton');
+btn.addEventListener('click', () => window.scrollTo({
+  top: 0,
+  behavior: 'smooth',
+}));
 /*----------------MENU HEIGHT CHANGE--------------------------------------------------------------------*/
 function scrollFunctionMenu() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
