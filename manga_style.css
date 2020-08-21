@@ -1,0 +1,97 @@
+*{
+	padding: 0px;
+	margin: 0px; 
+	box-sizing: border-box;
+}
+body{ align-self: center; margin: 0; padding: 0;}
+#topButton{
+	display: none;
+}
+#siteHeader {
+	display: flex;
+	justify-content: space-around;
+    height: 7vh;
+    border-top-width: 0;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    z-index: 30;
+    background: #FFFFFF;
+    transition: 0.3s;
+    /*shadow*/
+    -webkit-box-shadow: -2px 6px 13px 1px rgba(0,0,0,0.56);
+	-moz-box-shadow: -2px 6px 13px 1px rgba(0,0,0,0.56);
+	box-shadow: -2px 6px 13px 1px rgba(0,0,0,0.56);
+}
+
+#menu{
+	width: 100%;
+    margin: auto;
+    position: relative;
+    background: #fff;
+}
+#menu a{vertical-align: middle; text-decoration: none;}
+#logo{
+	margin-left: 7%;
+	vertical-align: center;
+	color: black;
+	font-weight: 540;
+	font-size: 20px;
+	letter-spacing: 5px;
+	flex: 1;
+}
+
+#s1{
+	position: relative;
+	top: 3vh;
+	margin: auto;
+	width: 90%;
+	background-color: white;
+	margin-top: 6vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#lista li{ float: left; list-style: none;}
+
+.box{
+	padding: 5px 5px 5px 5px;
+	height: 50vh;
+	width: 30vh;
+	border: 1px solid transparent;
+	display: block;
+	text-align: center;
+}
+
+.box .link{
+	text-decoration: none;
+	font-weight: bold;
+	transition: .3s;
+	color: black;
+}
+
+.box .link:hover{
+	text-decoration: underline;
+}
+
+.box img{
+	width: 100%;
+	height: 80%;
+	border-radius: 3%;
+}
+
+@media screen and (max-width: 997px){
+	.box{
+		height: 45vh;
+		width: 27vh;
+	}
+}
+@media screen and (max-width: 500px){
+	.box{
+		height: 25vh;
+		width: 15vh;
+	}
+}
