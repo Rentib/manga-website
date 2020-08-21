@@ -117,7 +117,7 @@ body{ align-self: center; margin: 0; padding: 0;}
 		height: 45vh;
 		width: 27vh;
 	}
-        .box .link { font-size: 15px; }
+        .box .link { font-size: 20px; }
 }
 @media screen and (max-width: 500px){
 	.box{
