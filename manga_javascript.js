@@ -34,7 +34,7 @@ function scrollFunction() {
 /*----------------PRZYCISK NA GÓRĘ----------------------------------------------------------------------*/
 function scrollFunctionButton() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("topButton").style.display = "block";
+        document.getElementById("topButton").style.display = "flex";
     } else {
         document.getElementById("topButton").style.display = "none";
     }
