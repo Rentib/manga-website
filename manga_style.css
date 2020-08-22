@@ -4,7 +4,8 @@
 	box-sizing: border-box;
 }
 body{ align-self: center; margin: 0; padding: 0;}
-
+/*-------------------------------------*/
+/* menu */
 #siteHeader {
 	display: flex;
 	justify-content: space-around;
@@ -52,8 +53,12 @@ body{ align-self: center; margin: 0; padding: 0;}
 	justify-content: center;
 	align-items: center;
 }
-
-#lista li{ float: left; list-style: none;}
+/*-------------------------------------*/
+/* Lista mang */
+#lista li{
+	float: left;
+	list-style: none;
+}
 
 .box{
 	padding: 5px 5px 5px 5px;
@@ -76,6 +81,8 @@ body{ align-self: center; margin: 0; padding: 0;}
 .box .link:hover{
 	text-decoration: underline;
 }
+
+/* tytuły */
 .tytul {
 	font-family: 'Oswald', sans-serif;
 	letter-spacing: 1px;
@@ -97,32 +104,7 @@ body{ align-self: center; margin: 0; padding: 0;}
 	height: 80%;
 	border-radius: 3%;
 }
-
-#topButton{
-	display: none;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	z-index: 99;
-	outline: none;
-	cursor: pointer;
-	height: 35px;
-	width: 35px;
-	font-size: 17px;
-	color: #ededed;
-	background: #7d7979;
-	border-radius: 15%;
-
-	transition: 0.5s;
-	transition-duration: 0.5s;
-}
-#topButton:hover{
-	color: #7d7979;
-	background: #ededed;
-}
-
+/* mobile friendly */
 @media screen and (max-width: 1024px){
 	.box{
 		height: 45vh;
@@ -161,3 +143,39 @@ body{ align-self: center; margin: 0; padding: 0;}
 		max-width: 29vw;
 	}
 }
+/*-------------------------------------*/
+/* TOP BUTTON */
+.topButton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 99;
+	outline: none;
+	height: 32px;
+	width: 32px;
+	font-size: 17px;
+	color: #ededed;
+	background: #7d7979;
+	border-radius: 15%;
+
+	opacity: 0;
+	transform: translateY(-60%);
+	-webkit-transform: translateY(-60%);
+	transition: 0.3s;
+}
+
+.topButton-active{
+	cursor: pointer;
+	opacity: 1;
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+}
+
+.topButton:hover{
+	color: #7d7979;
+	background: #ededed;
+}
+/*-------------------------------------*/
