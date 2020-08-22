@@ -86,17 +86,17 @@ body{ align-self: center; margin: 0; padding: 0;}
 .tytul {
 	font-family: 'Oswald', sans-serif;
 	letter-spacing: 1px;
-    font-size: 1.4em;
-    font-weight: 400;
+    font-size: 1em;
+    font-weight: 500;
 }
 @media screen and (max-width: 500px){
 	.tytul{
-	    font-size: 1.2em;
+	    font-size: 0.9em;
 	}
 }
 @media screen and (max-width: 767px){
 	.tytul{
-	    font-size: 1.3em;
+	    font-size: 0.8em;
 	}
 }
 .box img{
